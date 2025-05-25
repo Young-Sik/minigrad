@@ -6,6 +6,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         'numpy',
+        'pytest',
     ],
     author='Young-Sik Choi',
     description='Educational minigrad autograd engine',
