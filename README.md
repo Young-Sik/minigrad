@@ -46,7 +46,6 @@ minigrad/
 │   └── positional.py # Positional encodings
 examples/
 tests/
-scripts/
 ```
 ## Testing
 To run the unit tests:
