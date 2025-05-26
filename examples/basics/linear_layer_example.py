@@ -1,3 +1,6 @@
+import numpy as np
+from minigrad import Tensor, AIPLinear
+
 # Linear layer mapping from 3 features to 2
 layer = AIPLinear(3, 2)
 

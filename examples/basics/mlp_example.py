@@ -1,3 +1,5 @@
+import numpy as np
+from minigrad import Tensor, AIPLinear, AIPModule
 class SimpleMLP(AIPModule):
     def __init__(self):
         super().__init__()
