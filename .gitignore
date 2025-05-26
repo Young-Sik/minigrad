@@ -17,3 +17,6 @@ build/
 
 # Ignore egg-info directories
 *.egg-info/
+
+# Ignore data files
+*.npz
