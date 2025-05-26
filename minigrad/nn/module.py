@@ -35,3 +35,15 @@ class AIPModule:
             param.zero_grad()
         for module in self._modules.values():
             module.zero_grad()
+            
+    def save_parameters(self, file_path):
+        params = {name: param.data for name, param in self.named_parameters()}
+        np.savez(file_path, **params)
+
+    def load_parameters(self, file_path):
+        loaded = np.load(file_path)
+        for name, param in self.named_parameters():
+            if name in loaded:
+                param.data = loaded[name]
+            else:
+                raise KeyError(f"Parameter '{name}' not found in loaded file.")
