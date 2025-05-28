@@ -1,6 +1,6 @@
 import numpy as np
 from minigrad import Tensor, AIPModule, AIPLinear
-from examples.cifar10.load_cifar10 import CIFAR10Loader
+from load_cifar10 import CIFAR10Loader
 
 class CIFAR10MLP(AIPModule):
     """Simple MLP for CIFAR-10 classification."""
