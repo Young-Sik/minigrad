@@ -1,6 +1,6 @@
 import numpy as np
 from minigrad import Tensor, AIPModule, AIPLinear
-from examples.mnist.load_mnist import MNISTLoader
+from load_mnist import MNISTLoader
 
 
 class MNISTMLP(AIPModule):
